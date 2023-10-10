@@ -1,0 +1,154 @@
+GİRİŞ
+Günümüzde küçük ya da büyük tüm işletmeler faaliyetlerini yerine getirebilmek, rakipleriyle yarışabilmek ve varlıklarını başarılı bir biçimde sürdürebilmek için bilgiye ihtiyaç 
+duyarlar. Bu nedenle bilgi, günümüzde üretim faktörleri içinde yer almakta ve sermaye, 
+hammadde, enerji ve iş gücü olarak sıralanan geleneksel üretim faktörleri kadar önem 
+taşımaktadır. Bununla birlikte bilginin istenilen amaca hizmet edebilmesi için zamanında 
+elde edilebilmesi ve amaca uygun olması gerekir. İşletmelerin faaliyetlerini düzenli ve etkin bir biçimde yerine getirebilmelerinde hayati bir öneme sahip olan bilginin zamanında 
+elde edilebilmesi ve ilgili kişi ve birimlere ihtiyaç duyulduğu anda iletilebilmesi ise bilgi 
+sistemleri aracılığla gerçekleştirilir. Bilgi sistemleri; ilgili verilerin toplanması, bu veriler 
+üzerinde birtakım işlemler uygulanarak verilerin yararlı bilgilere dönüştürülmesi ve ilgili kişi ve birimlere iletilmesini, belirli bir düzen içinde gerçekleştiren sistemlerdir
+
+
+Veritabanının Tarihçesi
+Bir konuyla ilgili verilere hızlı ve kolay biçimde erişebilme isteği, verilerin düzenli biçimde saklanması ihtiyacını doğurmuş, dolayısıyla veritabanı olgusunun bu adla olmasa 
+bile geçmişten günümüze kadar bir biçimde hayatımızda yer almasına neden olmuştur.
+
+1960’lar: 1960’lı yılların başında Charles Bachman tarafından IDS (Integrated Data Store-Bütünleştirilmiş Veri Depolama) adıyla ilk genel amaçlı veritabanı yönetim sistemi geliştirilmiştir. 1960’ların sonunda ise IBM tarafından IMS (Information Management SystemBilgi Yönetim Sistemi) adıyla ilk ticari VTYS (Veritabanı Yönetim Sistemi) geliştirilmiş ve bu yapı hiyerarşik veri modeline temel teşkil etmiştir (Vural ve Sağıroğlu, 2010, s.72)
+
+1970’ler: 1974 ve 1977 yılları arasında iki önemli ilişkisel veritabanı sistemi prototipi 
+oluşturulmuştur. Bunlardan biri UBC’de geliştirilen Ingres, diğeri ise IBM San Jose’de oluşturulan System R’dir
+
+1980’ler: Yapılandırılmış Sorgu Dili (SQL) standart sorgu dili hâline gelmiştir. Buna 
+paralel olarak ilişkisel veritabanı sistemleri, bilgisayar satışlarındaki hızlı yükselişin veritabanı piyasasını canlandırmasıyla ticari bir başarıya dönüşmüştür. Bu da ağ ve hiyerarşik veritabanı modellerinin popülaritesinde büyük bir düşüşe yol açmıştır.
+
+1990’lar: 1990’ların başında veritabanı endüstrisinde yaşanan kriz nedeniyle bu sektörde varlığını sürdüren şirketler krizi fırsat bilerek karmaşık veritabanı ürünlerini yüksek 
+fiyatlarla satabilmişlerdir
+
+2000’ler: Internet endüstrisi 2000’lerin başında bir düşüş yaşamasına rağmen veritabanı uygulamaları büyümeye devam etmiştir. Web tabanlı işletmelerin artması ve kullanımlarının yaygınlaşması ile veritabanı yönetim sistemlerinin önemi giderek artmaya 
+devam etmekte ve yeni uygulamaların geliştirilmesine neden olmaktadır.
+
+
+VERİTABANINA İLİŞKİN TEMEL KAVRAMLAR
+Günümüzde sıklıkla karşılaşılan bir kavram hâline gelen veritabanı çok genel anlamda, bir 
+kurumun ihtiyaç duyduğu ve kullandığı veriler bütününü ifade eder. Bu noktada öncelikle 
+veri kavramı ve veri kavramı ile karıştırılan bilgi kavramı üzerinde durmak faydalı olacaktır. 
+
+Veritabanı Tanımlamak: Veritabanında yer alacak verinin adı, tipi, uzunluğu gibi veri 
+yapıları ve özelliklerinin belirlenmesidir.
+Veritabanı Oluşturmak: Veritabanını yaratma ve veriyi depolama sürecidir. Verilerin 
+depolanacağı fiziksel bellek alanının belirlenmesi ve verilerin bu alana aktarılmasını içerir.
+Veritabanında İşlem Yapmak: Veritabanını izleme, veriler üzerinde sorgulama yapma, veritabanında gerekli olan değişiklikleri yaparak veritabanını güncelleme ve verilerden rapor elde etme işlevlerini içerir
+
+GELENEKSEL DOSYA SİSTEMLERİ VE VERİTABANI YÖNETİM SİSTEMLERİ
+
+Verilerin belirli bir düzen içinde saklanması ve ihtiyaç duyulduğunda erişilebilmesi 
+amacıyla bilgisayar kullanımında geçmişten günümüze farklı yaklaşımlar benimsenmiştir. Veritabanı yaklaşımından önce kullanılan ve geleneksel dosya sistemi olarak ifade edilen yaklaşımda veriler bilgisayarda ayrı ayrı dosyalar biçiminde saklanmaktaydı. 
+Birbiriyle ilişkili olan veriler bir dosyada, başka bir açıdan birbiriyle ilişkili veriler de 
+başka bir dosyada yer almaktaydı. Bununla birlikte iki farklı dosya içinde aynı verinin 
+yer alması da söz konusu idi
+
+Veri Bütünlüğünün Sağlanması
+Veri bütünlüğü, veritabanında yer alan bir verinin farklı uygulamalarda kullanımı sözkonusu olduğunda veri üzerinde yapılacak bir değişimin verinin kullanıldığı diğer uygulamalara da yansıtılması anlamına gelir. Bu, özellikle verinin silinmesi durumunda önem kazanmaktadır.
+
+Veri Paylaşımının Sağlanması
+Geleneksel dosya sistemlerinde aynı veriye birden fazla kullanıcının aynı anda erişmesine 
+olanak yoktur. Bu sistemlerde veriye erişim sıralı erişim kurallarına göre gerçekleştirilir. 
+Buna göre veriye erişme isteğini ilk bildiren ilk sırada veriye erişir, diğer kullanıcının veriye erişebilmesi için ilk kullanıcının işinin bitmesi gerekir.
+
+Verilerin Gizliliğinin ve Güvenliğinin Sağlanması
+Herhangi bir kurumda, kurum çalışanları tarafından ortak kullanılan verilerin depolandığı yapının (dosya ya da veritabanı) ve bu yapı içinde yer alan verilerin gizliliği ve güvenliği 
+çok önemli bir konudur. Veriler üzerinde okuma, yazma, ekleme, silme ve güncelleme 
+gibi faaliyetler gerçekleştirilebilir. 
+
+VERİTABANI KULLANICILARI
+Veritabanı ile herhangi bir şekilde etkileşimde olan kişi ya da kişiler veritabanı kullanıcısı 
+olup aşağıdaki gibi sınıflandırılabilirler: 
+•	 Veritabanı Sorumluları
+•	 Veritabanı Yöneticisi
+•	 Veritabanı Tasarımcısı
+•	 Son Kullanıcılar
+•	 Standart Kullanıcılar
+•	 Sıradan ya da Parametrik Kullanıcılar
+•	 Gelişmiş Kullanıcılar
+•	 Bağımsız Kullanıcılar
+•	 Sistem Analistleri ve Uygulama Programcıları
+
+Veritabanı Sorumluları 
+Veritabanı sorumluları, veritabanının tasarlanması, oluşturulması ve veritabanının işletim faaliyetlerinden birinci derecede sorumlu olan ve veritabanı üzerinde en fazla yetkiye 
+sahip olan kullanıcılardır. 
+
+Veritabanı Yöneticisi 
+Veritabanı yöneticisinin (database administrator) veritabanına erişim yetkilerini belirleme, veritabanı kullanımının düzenlenmesi ve izlenmesini sağlama, ihtiyaç duyulan yazılım ve donanım kaynaklarını edinme biçiminde sıralanan sorumlulukları vardır. Ayrıca 
+güvenlik ihlalleri ve kötü sistem yanıt süresi gibi sorunların çözümünden de sorumludur. 
+
+Veritabanı Tasarımcısı 
+Veritabanı tasarımcısı (database designer) veritabanında saklanacak olan verilerin tanımlanmasından ve bu verilerin depolanması ve gösterilmesi için gerekli olan uygun yapıların seçilmesinden sorumludur. 
+
+VERİTABANI YÖNETİM SİSTEMLERİNİN MİMARİSİ
+VTYS’lerinin mimarisi geçmişten günümüze incelendiğinde, ilk veritabanı sistemlerinde, 
+VTYS’nin tüm yazılım paketlerinin tek bir sisteme entegre edildiği, modern VTYS’lerinde 
+ise istemci/sunucu mimarisi ile modüler bir yapılanmanın sözkonusu olduğu görülmektedir. Buna bağlı olarak, büyük merkezi ana bilgisayarlar yerini, iletişim ağları aracılığıyla 
+çeşitli sunucu bilgisayarlara bağlanan yüzlerce iş istasyonu ve kişisel bilgisayarlara bırakmıştır. 
+
+Veri Modelleri 
+Veritabanı yaklaşımının temel karakteristiklerinden biri, veritabanının bazı veri soyutlama düzeyleri sağlamasıdır. Veri soyutlama (data abstraction), verilerin düzenlenmesi ve 
+depolanmasına ilişkin ayrıntıların gizlenmesi ve verinin daha iyi anlaşılmasını sağlamak 
+için veriye ilişkin temel özelliklerin vurgulanması anlamına gelir
+
+Veri Modellerinin Sınıflandırılması
+Yüksek düzeyli ya da kavramsal veri modelleri (conceptual data models), kullanıcıların 
+veri algılama biçimiyle ilişkili kavramları kapsar. 
+
+Veritabanı Yönetim Sistemlerinde Kullanılan Diller
+VTYS daha önce de belirtildiği gibi farklı özellikteki kullanıcılara destek verir. Bu nedenle VTYS’lerin bu farklı kullanıcı gruplarından her birine yönelik uygun dil ve arayüz 
+kullanmaları gerekir. 
+Veritabanı tasarımı tamamlandıktan ve veritabanını uygulayacak bir VTYS seçildikten 
+sonra ilk adım veritabanı için kavramsal ve fiziksel şemaların belirlenmesi ve bu iki düzey 
+arasında eşleştirmelerin yapılmasıdır. Düzeyler arasında mutlak bir ayrımın yapılmadığı 
+pekçok VTYS’de iki şemayı tanımlamak amacıyla veri tanımlama dili (data definition 
+language) olarak adlandırılan bir dil, veritabanı yöneticisi ve veritabanı tasarımcısı tarafından kullanılır. İki şema bu şekilde tanımlandıktan sonra sözkonusu tanımlar, VTYS’de 
+veri tanımlama dili derleyicisi (data definition language compiler) tarafından işlenerek 
+VTYS kataloğunda depolanacak uygun yapılar biçimine dönüştürülür
+
+Veritabanı Yönetim Sistemlerinin Bileşen Modülleri
+Veritabanı ve VTYS kataloğu genellikle disk üzerinde depolanır. Diske erişim, öncelikle 
+disk üzerinde okuma/yazma işlemlerini programlayan işletim sistemi tarafından kontrol 
+edilir. Çoğu VTYS’nin, diskin okunup/yazılmasını programlamak için kendi ara bellek 
+yönetim modülü (buffer management module) bulunur. Böylece diskin okuma/yazma görevini azaltan bu modül veritabanı performansını dikkate değer ölçüde arttırır.
+
+VERİTABANI TÜRLERİ
+Daha önce de söz edildiği üzere her veritabanı yönetim sistemi bir veri modeli kullanır. 
+Veritabanında yer alacak veriler ve veriler arasında kurulacak ilişkiler mantıksal olarak 
+ilgili veri modeline göre yapılandırılır ve veritabanları da buna göre sınıflandırılır.
+Geçmişten günümüze kadar geliştirilmiş olan çok sayıda veri modeli, kullandıkları teknikler açısından dört temel başlıkta incelenir. Bu dört veri modelinden hangisini kullandığına bağlı olarak veritabanları da aşağıda verilen dört başlık altında sınıflandırılabilir:
+1. Hiyerarşik veritabanı (Hierarchical database)
+2. Ağ veritabanı (Network database)
+3. İlişkisel veritabanı (Relational database)
+4. Nesneye yönelik veritabanı (Object oriented database)
+
+Hiyerarşik Veritabanı 
+Hiyerarşik veritabanı, en eski veri modeli olan hiyerarşik veri modelini temel alıp 1960 ve 
+1970’li yıllarda yaygın olarak kullanılmıştır. Bu tür veritabanlarında kullanılan veri modelinde kayıtlar, ilişkileri temsil eden ve ağaç yapısına benzeyen kök ve dallar biçiminde hiyerarşik bir yapıda oluşturulur. Bu yapı, başlangıç noktası ağacın kökü, bağlantılı kılınacak 
+noktalar dallar ve ana dallara bağlı alt dallar olarak düşünülebilen bir yapı biçimindedir. 
+Buna göre veriler arasındaki ilişkilerde hiyerarşinin üst bölümünde olan dallar alt bölümde birden çok dal ile bağlantılı olabilirken alt bölümünde olan dallar üstte kalan dallara 
+yalnızca tek bir noktadan bağlantılı olabilirler
+
+Ağ Veritabanı 
+Ağ veritabanı, 1970’li yıllar ile 1980’li yılların ilk yarısında kullanılan ve ağ veri modelini temel alan veritabanı türüdür. 
+
+İlişkisel Veritabanı 
+Bu tür veritabanı ilişkisel veri modelini temel almış ve ilk olarak 1970 yılında ortaya atılmıştır. 1970’li yılların sonunda kullanılmaya başlanmış ve 1985 yılından sonra kullanımı 
+yaygınlaşmıştır. Bu yapıda ilk iki veri modelinden farklı olarak birden çok ilişki biçimi 
+kullanılabilir
+
+Nesneye Yönelik Veritabanı
+Günümüzde kullanılan ve gelecekte de kullanılacak pek çok uygulamada yalnızca harf, 
+rakam ya da çeşitli karakterler kullanılarak yapılandırılmış verileri değil aynı zamanda 
+multimedya (çeşitli çizim, fotoğraf, görüntü, ses ya da video gibi nesneleri) de içeren veritabanı yönetim sistemlerine ihtiyaç duyulmaktadır
+
+VERİTABANI YÖNETİM SİSTEMİ YAZILIMLARI
+Günümüzde yaygın olarak bilinen veritabanı yönetim sistemi yazılımları; MS SQL Server, Oracle, MySQL, Sybase, MS Access, PostgreSQL, IBM DB2, Informix, Advantage 
+biçiminde sıralanabilir. 
+
+
+
